@@ -8,7 +8,7 @@ import TouristPlace from "./pages/quiz1/tourist-place";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Browser />} />
         <Route path="/quiz1" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/quiz1/local-food" element={<LocalFood />} />
         <Route path="/quiz1/tourist-place" element={<TouristPlace />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
