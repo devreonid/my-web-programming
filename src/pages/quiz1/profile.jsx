@@ -1,3 +1,4 @@
+import ProfileImg from "../../assets/profile.webp";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
@@ -54,7 +55,7 @@ export default function Profile() {
             variants={sidebarVariants}
           >
             <img
-              src="/images/profile.webp"
+              src={ProfileImg}
               alt="profile"
               className="rounded-full aspect-[1/1] w-40 md:w-48 object-cover shadow-lg"
             />

@@ -1,8 +1,11 @@
+import PustakaImg from "../assets/pustaka.webp";
+import KacaMayangImg from "../assets/kaca-mayang.webp";
+import AsiaHeritageImg from "../assets/asia-heritage.webp";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
-  { image: "/images/pustaka.webp", 
+  { image: PustakaImg, 
     title: "Soeman HS Library",
     rating: " 4.5 / 5",
     desc: 
@@ -12,7 +15,7 @@ const slides = [
     address: `Jl. Jend. Sudirman No.462, Jadirejo, Kec. Sukajadi, Kota Pekanbaru, Riau 28126`,
     website: `https://id.wikipedia.org/wiki/Perpustakaan_Soeman_H.S.`,
     link: `https://maps.app.goo.gl/a5KqVsxHi9hBVHGH6`},
-  { image: "/images/kaca-mayang.webp", 
+  { image: KacaMayangImg, 
     title: "Kaca Mayang Park",
     rating: " 4.3 / 5",
     desc: 
@@ -26,7 +29,7 @@ const slides = [
     address: `Jl. Jend. Sudirman No.474, Jadirejo, Kec. Sukajadi, Kota Pekanbaru, Riau 28121`,
     website: `https://www.discoverasr.com/id/destinations/indonesia/pekanbaru/rth-putri-kaca-mayang-taman-hijau-di-tengah-kota-pekanbaru`,
     link: `https://maps.app.goo.gl/dHj7PKNR5kQTYb6t5`},
-  { image: "/images/asia-heritage.webp", 
+  { image: AsiaHeritageImg, 
     title: "Asia Heritage", 
     rating: " 4.3 / 5",
     desc: 

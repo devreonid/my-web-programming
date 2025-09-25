@@ -1,5 +1,3 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -9,6 +7,10 @@ export default function Home() {
   const tasks = [
     { name: "QUIZ 1", path: "/quiz1" },
   ];
+
+  useEffect(() => {
+    document.title = "Task Browser";
+  }, []);
 
   const filtered = tasks.filter((t) =>
     t.name.toLowerCase().includes(search.toLowerCase())

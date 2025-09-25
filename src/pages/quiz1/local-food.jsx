@@ -1,3 +1,6 @@
+import BoluKemojoImg from "../../assets/bolukemojo.webp";
+import RotiJalaImg from "../../assets/rotijala.webp";
+import MieSaguImg from "../../assets/miesagu.webp";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
@@ -31,7 +34,7 @@ export default function LocalFood() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <img
-              src="/images/bolukemojo.webp"
+              src={BoluKemojoImg}
               alt="bolukemojo"
               className="rounded-2xl w-full md:w-80 aspect-[4/3] object-cover"
             />
@@ -58,7 +61,7 @@ export default function LocalFood() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <img
-              src="/images/rotijala.webp"
+              src={RotiJalaImg}
               alt="rotijala"
               className="rounded-2xl w-full md:w-80 aspect-[4/3] object-cover"
             />
@@ -84,7 +87,7 @@ export default function LocalFood() {
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             <img
-              src="/images/miesagu.webp"
+              src={MieSaguImg}
               alt="miesagu"
               className="rounded-2xl w-full md:w-80 aspect-[4/3] object-cover"
             />

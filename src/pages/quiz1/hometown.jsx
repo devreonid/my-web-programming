@@ -1,3 +1,4 @@
+import HometownImg from "../../assets/hometown1.webp";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
@@ -50,7 +51,7 @@ export default function Hometown() {
           {/* Sidebar Info */}
           <motion.div className="min-w-0" variants={sidebarVariants}>
             <img
-              src="/images/hometown1.webp"
+              src={HometownImg}
               alt="hometown1"
               className="w-full aspect-[16/9] object-cover rounded-2xl shadow-lg"
             />
