@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/pweb1/',
+  base: '/my-web-programming/',
 })
