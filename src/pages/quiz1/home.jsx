@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+      document.title = "Terserah";
+    }, []);
+  
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navbar */}

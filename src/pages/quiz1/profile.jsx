@@ -63,11 +63,10 @@ export default function Profile() {
               RAZIQ DANISH SAFARAZ
             </h3>
             <p className="text-justify break-words mt-2">
-              Computer Science student with interests in UAV robotics, systems programming, and game development. \
+              Computer Science student with interests in UAV robotics, systems programming, and game development.
               Experienced in ROS, C/C++, C#, Unity, and Godot.
             </p>
             <div className="grid gap-2 md:gap-4 mt-5 break-words">
-              <p>Phone: +62 823 8368 2006</p>
               <p>Email: raziqdanish777@gmail.com</p>
             </div>
             <div className="flex gap-4 mt-5 justify-center md:justify-start">

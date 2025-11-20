@@ -111,7 +111,7 @@ export default function Slideshow() {
           More Details <span class="icon-[solar--arrow-right-up-linear]"></span>
         </a>
         <p className="mt-5">
-          Adress: <br />
+          Address: <br />
           <a href={slides[current].link} target="_blank" rel="noopener noreferrer" className="font-light">{slides[current].address}</a>
         </p>
       </div>

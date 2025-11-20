@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [search, setSearch] = useState("");
   const tasks = [
     { name: "QUIZ 1", path: "/quiz1" },
+    { name: "Midterm Exam", path: "https://ets-pweb-nri.kero.my.id/" },
+    { name: "QUIZ 2", path: "https://q2-pweb-nri.kero.my.id/"}
   ];
 
   useEffect(() => {
@@ -74,12 +76,23 @@ export default function Home() {
           >
             {filtered.map((task, index) => (
               <motion.div key={index} variants={itemVariants}>
-                <Link
-                  to={task.path}
-                  className="block bg-neutral-800 hover:bg-neutral-700 transition-all duration-300 rounded-lg p-4 font-medium text-center"
-                >
-                  {task.name}
-                </Link>
+                {task.path.startsWith("http") ? (
+                  <a
+                    href={task.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-neutral-800 hover:bg-neutral-700 transition-all duration-300 rounded-lg p-4 font-medium text-center"
+                  >
+                    {task.name}
+                  </a>
+                ) : (
+                  <Link
+                    to={task.path}
+                    className="block bg-neutral-800 hover:bg-neutral-700 transition-all duration-300 rounded-lg p-4 font-medium text-center"
+                  >
+                    {task.name}
+                  </Link>
+                )}
               </motion.div>
             ))}
             {filtered.length === 0 && (
